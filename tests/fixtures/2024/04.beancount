@@ -1,0 +1,7 @@
+2024-04-10 * "Whole Foods" "weekly groceries"
+  Expenses:Food:Groceries                       42.50 USD
+  Liabilities:CreditCard:Chase                 -42.50 USD
+
+2024-04-12 * "Uber" ""
+  Expenses:Transport:Rideshare                  18.00 USD
+  Liabilities:CreditCard:Chase                 -18.00 USD

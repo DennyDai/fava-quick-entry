@@ -1,0 +1,19 @@
+option "title" "Test ledger for fava-quick-entry"
+option "operating_currency" "USD"
+
+2010-01-01 custom "fava-extension" "fava_quick_entry"
+2010-01-01 custom "qe-target" "default" "{year}/{month:02d}.beancount"
+
+2020-01-01 open Assets:Cash USD
+2020-01-01 open Assets:Checking:Wells USD
+2020-01-01 open Liabilities:CreditCard:Chase USD
+2020-01-01 open Expenses:Food:Coffee USD
+2020-01-01 open Expenses:Food:Groceries USD
+2020-01-01 open Expenses:Transport:Rideshare USD
+2020-01-01 open Income:Salary:Acme USD
+2020-01-01 open Equity:Opening-Balances USD
+
+2020-01-01 pad Assets:Checking:Wells Equity:Opening-Balances
+2020-01-02 balance Assets:Checking:Wells 5000.00 USD
+
+include "2024/04.beancount"
